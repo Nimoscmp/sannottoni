@@ -23,28 +23,28 @@
           <!-- ===== Desktop menu =====  -->
 
           <!-- ===== > Logo ===== -->
-          <div class="col-auto me-auto d-none d-md-flex">
+          <div class="col-auto me-auto d-none d-lg-flex">
             <div class="m-3 text-success">
               <i class="fas fa-running fa-4x"></i>
             </div>
           </div>
           
           <!-- ===== > Menu ===== -->
-          <div class="col-auto">
-            <div>
-              <ul class="nav align-items-center d-none d-md-flex">
+          <div class="col-auto desktop-menu">
+            <div class="desktop-menu">
+              <ul class="nav align-items-center d-none d-lg-flex">
                 <li class="nav-item"><a class="nav-link link-success px-4 py-2" href="#start">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link link-success px-4 py-2" href="#products">Productos</a></li>
                 <li class="nav-item"><a class="nav-link link-success px-4 py-2" href="#aboutus">Conócenos</a></li>
                 <li class="nav-item"><a class="nav-link link-success px-4 py-2" href="#contact">Contacto</a></li>
                 <li class="nav-item">
-                  <span class="nav-link">
+                  <a class="nav-link">
                     <i class="fas fa-shopping-cart fa-2x text-danger"></i>
-                  </span>
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <span class="nav-link px-4 py-2 avatar-container" data-bs-target="#profileModal" data-bs-toggle="modal">
-                    <img src="img/profile.jpg" alt="Profile">
+                  <span class="nav-link mx-4 my-2 p-1 avatar-container" data-bs-target="#profileModal" data-bs-toggle="modal">
+                    <img class="img-desktop" src="img/profile.jpg" alt="Profile">
                     <i class="fas fa-user-cog text-danger"></i>
                   </span>
                 </li>
@@ -54,17 +54,17 @@
         
           
           <!-- ===== Mobile menu =====  -->
-          <div class="col justify-content-between align-items-center d-flex d-md-none">
+          <div class="col justify-content-between align-items-center d-flex d-lg-none mobile-menu">
 
             <!-- ===== > Dropdown menu ===== -->
-            <div class="dropdown d-md-none p-2">
+            <div class="dropdown m-2 ms-0">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-bars"></i>
               </button>
               <ul class="dropdown-menu bg-light" aria-labelledby="dropdownButton">
-                <li><a class="dropdown-item text-primary" href="#products">Productos</a></li>
+                <li><a class="dropdown-item text-primary" id="item-products" href="#products">Productos</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-warning" href="#">Carrito</a></li>
+                <li><a class="dropdown-item text-warning" id="item-cart" href="#">Carrito</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#start">Inicio</a></li>
                 <li><a class="dropdown-item" href="#aboutus">Conócenos</a></li>
@@ -73,16 +73,16 @@
             </div>
     
             <!-- ===== > Logo ===== -->
-            <div class="d-md-none">
-              <div class="m-3 text-success">
-                <i class="fas fa-running fa-4x"></i>
-              </div>
+            <div class="ms-3">
+              <span class="text-success">
+                <i class="fas fa-running fa-3x"></i>
+              </span>
             </div>
 
             <!-- ===== > Profile ===== -->
-            <span class="px-4 py-2 avatar-container d-md-none" data-bs-target="#profileModal" data-bs-toggle="modal">
-              <img src="img/profile.jpg" alt="Profile">
-              <i class="fas fa-user-cog"></i>
+            <span class="mx-4 me-2 my-2 p-1 avatar-container" data-bs-target="#profileModal" data-bs-toggle="modal">
+              <img class="img-mobile" src="img/profile.jpg" alt="Profile">
+              <i class="fas fa-user-cog text-danger"></i>
             </span>
 
           </div>

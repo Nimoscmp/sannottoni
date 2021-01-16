@@ -11313,4 +11313,59 @@ fieldset:disabled .btn {
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+/*========================
+__________HEADER__________
+==========================*/
+header .img-desktop {
+  width: 3.75rem;
+}
+
+header .img-mobile {
+  width: 3.4rem;
+}
+
+header img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+header .fa-shopping-cart {
+  cursor: pointer;
+}
+
+header .avatar-container {
+  position: relative;
+}
+
+header .avatar-container i {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header a {
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+}
+
+header .desktop-menu a:hover {
+  color: black !important;
+  -webkit-transform: translateY(-0.4rem);
+          transform: translateY(-0.4rem);
+}
+
+header .mobile-menu a:hover {
+  color: darkslategray !important;
+  -webkit-transform: translateX(0.4rem);
+          transform: translateX(0.4rem);
+}
+
+header .mobile-menu #item-products:hover {
+  color: #1a1aa3 !important;
+}
+
+header .mobile-menu #item-cart:hover {
+  color: chocolate !important;
+}
 /*# sourceMappingURL=styles.css.map */

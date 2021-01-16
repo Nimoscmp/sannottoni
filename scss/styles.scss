@@ -21,6 +21,76 @@ $font-secondary: 'Roboto', sans-serif;
 $font-alternative: 'Yusei Magic', sans-serif;
 
 
+//GENERAL
 body{
     font-family: $font-primary;
+}
+
+
+/*========================
+__________HEADER__________
+==========================*/
+
+header{
+    .img-desktop{
+        width: 3.75rem;
+    }
+
+    .img-mobile{
+        width: 3.4rem;
+    }
+
+    img{
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .fa-shopping-cart{
+        cursor: pointer;
+    }
+
+    .avatar-container{
+        position: relative;
+
+        i{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    a{
+        transition: all 0.3s ease !important;
+    }
+
+    .desktop-menu{
+        a{
+
+            &:hover{
+                color: black !important;
+                transform: translateY(-0.4rem);
+            }  
+        }
+    }
+
+    .mobile-menu{
+        a{
+            &:hover{
+                color: darkslategray !important;
+                transform: translateX(0.4rem);
+            }
+        }
+
+        #item-products{
+            &:hover{
+                color: rgb(26, 26, 163) !important;
+            }
+        }
+
+        #item-cart{
+            &:hover{
+                color: chocolate !important;
+            }
+        }
+    }
 }
