@@ -1,3 +1,26 @@
+/*
+=====================================
+STYLES SHEET
+Developed by Nabalas©
+=====================================
+*/
+
+//BOOTSTRAP
+@import '../bootstrap/scss/bootstrap.scss';
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400&family=Yusei+Magic&display=swap');
+
+//Rules for family fonts
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Yusei Magic', sans-serif;
+
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+$font-alternative: 'Yusei Magic', sans-serif;
+
+
 body{
-    background-color: azure;
+    font-family: $font-primary;
 }
