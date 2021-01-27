@@ -5,20 +5,25 @@ Developed by Nabalas©
 =====================================
 */
 
+//Define previous variables
+$primary: rgb(124, 3, 98);
+
 //BOOTSTRAP
 @import '../bootstrap/scss/bootstrap.scss';
 
 //FONTS
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400&family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400&family=Yusei+Magic&family=Amatic+SC&display=swap');
 
 //Rules for family fonts
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Yusei Magic', sans-serif;
+// font-family: 'Amatic SC', cursive;
 
 $font-primary: 'Montserrat', sans-serif;
 $font-secondary: 'Roboto', sans-serif;
 $font-alternative: 'Yusei Magic', sans-serif;
+$font-logo: 'Amatic SC', cursive;
 
 
 //GENERAL
@@ -26,6 +31,11 @@ body{
     font-family: $font-primary;
 }
 
+
+//FONTS
+.font-logo{
+    font-family: $font-logo;
+}
 
 /*========================
 __________HEADER__________
@@ -81,16 +91,70 @@ header{
             }
         }
 
-        #item-products{
-            &:hover{
-                color: rgb(26, 26, 163) !important;
+        .dropdown-menu{
+            overflow: hidden !important;
+
+            #item-products{
+                &:hover{
+                    color: rgb(26, 26, 163) !important;
+                }
             }
-        }
 
         #item-cart{
-            &:hover{
-                color: chocolate !important;
+                &:hover{
+                    color: chocolate !important;
+                }
             }
         }
+        
+    }
+}
+
+
+/*========================
+__________CATALOG_________
+==========================*/
+
+.img-catalog{
+    &::before{
+        content: "";
+        display: block;
+        width: 5rem;
+        height: 2px;
+        background-color: #b88423;
+        margin: 1rem auto 1rem;
+    }
+}
+
+
+.tag-material{
+    font-size: 0.75rem !important;
+}
+
+.product-card{
+    box-shadow: 0px 2px 5px 1px rgba($color: #353535, $alpha: 0.2);
+
+    button{
+        width: 90%;
+    }
+
+}
+
+
+/*========================
+______MEDIA QUERIES______
+==========================*/
+
+@media screen and (min-width: '400px') and (max-width: '575px'){
+
+    .product-card{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: '399px'){
+
+    #searchButton{
+        width: 100% !important;
     }
 }

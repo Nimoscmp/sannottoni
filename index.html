@@ -16,6 +16,8 @@
     </head>
   
   <body>
+
+    <!-- ====== HEADER ======  -->
   
       <div class="container" id="start">
         <header class="row bg-light align-items-center d-flex">
@@ -126,7 +128,342 @@
 
         </header>
       </div>
+
+        <!-- ===== CATALOG =====  -->
+        <div class="container mt-3">
+
+            <!-- ----- Searching Bar -----  -->
+            <div class="row m-1">
+                <div class="col-12 col-sm-auto d-flex justify-content-center px-1">
+                    <input type="text" class="form-control m-1" id="searchInput" placeholder="Escribe un producto">
+                </div>
+                <div class="col-12 col-sm-auto d-flex justify-content-center px-1">
+                    <button type="button" class="btn btn-secondary m-1 px-4" id="searchButton">Buscar</button>
+                </div>
+            </div>
+
+            <!-- ----- Products -----  -->
+
+            <div class="row m-1 my-3 d-flex justify-content-center justify-content-sm-around">
+
+                <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card">
+                    <div class="title d-flex justify-content-between align-items-center m-1 my-2">
+                        <h5 class="d-inline-block text-secondary m-0">Windy day</h5>
+                        <i class="far fa-bookmark fa-2x text-secondary"></i>
+                    </div>
+                    <hr>
+                    <div class="about-product m-1 d-flex justify-content-around align-items-center">
+                        <p class="m-0 text-muted tag-material">Clima</p>
+                        <span><small>Frío</small></span>
+                        <p class="m-0 text-muted tag-material">Confort</p>
+                        <span><small>Máximo</small></span>
+                    </div>
+
+                    <div class="pricing m-1 d-flex justify-content-around">
+                        <p class="text-muted m-0"><small class="pe-2"><del>$87.900</del></small><strong class="text-success">$69.900</strong></p>
+                    </div>
+
+                    <div class="img-catalog">
+                        <img src="img/maillot1.jpg" alt="maillot1" class="img-fluid">
+                    </div>
+                    <div class="rating d-flex justify-content-center">
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                    </div>                                                        
+                </div>
+
+
+                <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card">
+                    <div class="title d-flex justify-content-between align-items-center m-1 my-2">
+                        <h5 class="d-inline-block text-secondary m-0">Dark style</h5>
+                        <i class="fas fa-bookmark fa-2x text-success"></i>
+                    </div>
+                    <hr>
+                    <div class="about-product m-1 d-flex justify-content-around align-items-center">
+                        <p class="m-0 text-muted tag-material">Clima</p>
+                        <span><small>Frío</small></span>
+                        <p class="m-0 text-muted tag-material">Confort</p>
+                        <span><small>Ultra</small></span>
+                    </div>
+
+                    <div class="pricing m-1 d-flex justify-content-around">
+                        <p class="text-muted m-0"><small class="pe-2"><del>$65.900</del></small><strong class="text-success">$49.900</strong></p>
+                    </div>
+
+                    <div class="img-catalog">
+                        <img src="img/maillot2.jpg" alt="maillot2" class="img-fluid">
+                    </div>
+                    <div class="rating d-flex justify-content-center">
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                    </div>
+                </div>
+
+
+                <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card">
+                    <div class="title d-flex justify-content-between align-items-center m-1 my-2">
+                        <h5 class="d-inline-block text-secondary m-0">Light day</h5>
+                        <i class="far fa-bookmark fa-2x text-secondary"></i>
+                    </div>
+                    <hr>
+                    <div class="about-product m-1 d-flex justify-content-around align-items-center">
+                        <p class="m-0 text-muted tag-material">Clima</p>
+                        <span><small>Cálido</small></span>
+                        <p class="m-0 text-muted tag-material">Confort</p>
+                        <span><small>Ultra</small></span>
+                    </div>
+
+                    <div class="pricing m-1 d-flex justify-content-around">
+                        <p class="text-muted m-0"><small class="pe-2"><del>$65.900</del></small><strong class="text-success">$49.900</strong></p>
+                    </div>
+
+                    <div class="img-catalog">
+                        <img src="img/maillot3.jpg" alt="maillot3" class="img-fluid">
+                    </div>
+                    <div class="rating d-flex justify-content-center">
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                    </div>
+                </div>
+
+
+                <div class="row d-flex justify-content-center my-3" id="buttonMore">
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-danger m-1" id="productDetails">Ver más...
+                            <i class="fas fa-angle-double-down"></i>
+                        </button>
+                    </div>          
+                </div>
+                
+
+                <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
+                    <div class="title d-flex justify-content-between align-items-center m-1 my-2">
+                        <h5 class="d-inline-block text-secondary m-0">Light day</h5>
+                        <i class="far fa-bookmark fa-2x text-secondary"></i>
+                    </div>
+                    <hr>
+                    <div class="about-product m-1 d-flex justify-content-around align-items-center">
+                        <p class="m-0 text-muted tag-material">Clima</p>
+                        <span><small>Cálido</small></span>
+                        <p class="m-0 text-muted tag-material">Confort</p>
+                        <span><small>Ultra</small></span>
+                    </div>
+
+                    <div class="pricing m-1 d-flex justify-content-around">
+                        <p class="text-muted m-0"><small class="pe-2"><del>$69.900</del></small><strong class="text-success">$49.900</strong></p>
+                    </div>
+
+                    <div class="img-catalog">
+                        <img src="img/maillot4.jpg" alt="maillot4" class="img-fluid">
+                    </div>
+                    <div class="rating d-flex justify-content-center">
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                    </div>
+                </div>
+
+
+                <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
+                    <div class="title d-flex justify-content-between align-items-center m-1 my-2">
+                        <h5 class="d-inline-block text-secondary m-0">Light day</h5>
+                        <i class="far fa-bookmark fa-2x text-secondary"></i>
+                    </div>
+                    <hr>
+                    <div class="about-product m-1 d-flex justify-content-around align-items-center">
+                        <p class="m-0 text-muted tag-material">Clima</p>
+                        <span><small>Todos</small></span>
+                        <p class="m-0 text-muted tag-material">Confort</p>
+                        <span><small>Ultra</small></span>
+                    </div>
+
+                    <div class="pricing m-1 d-flex justify-content-around">
+                        <p class="text-muted m-0"><small class="pe-2"><del>$78.900</del></small><strong class="text-success">$59.900</strong></p>
+                    </div>
+
+                    <div class="img-catalog">
+                        <img src="img/maillot5.jpg" alt="maillot5" class="img-fluid">
+                    </div>
+                    <div class="rating d-flex justify-content-center">
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                    </div>
+                </div>
+
+
+                <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
+                    <div class="title d-flex justify-content-between align-items-center m-1 my-2">
+                        <h5 class="d-inline-block text-secondary m-0">Light day</h5>
+                        <i class="far fa-bookmark fa-2x text-secondary"></i>
+                    </div>
+                    <hr>
+                    <div class="about-product m-1 d-flex justify-content-around align-items-center">
+                        <p class="m-0 text-muted tag-material">Clima</p>
+                        <span><small>Cálido</small></span>
+                        <p class="m-0 text-muted tag-material">Confort</p>
+                        <span><small>Máximo</small></span>
+                    </div>
+
+                    <div class="pricing m-1 d-flex justify-content-around">
+                        <p class="text-muted m-0"><small class="pe-2"><del>$75.900</del></small><strong class="text-success">$55.900</strong></p>
+                    </div>
+
+                    <div class="img-catalog">
+                        <img src="img/maillot6.jpg" alt="maillot3" class="img-fluid">
+                    </div>
+                    <div class="rating d-flex justify-content-center">
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                    </div>
+                </div>
+
+
+                <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
+                    <div class="title d-flex justify-content-between align-items-center m-1 my-2">
+                        <h5 class="d-inline-block text-secondary m-0">Windy day</h5>
+                        <i class="far fa-bookmark fa-2x text-secondary"></i>
+                    </div>
+                    <hr>
+                    <div class="about-product m-1 d-flex justify-content-around align-items-center">
+                        <p class="m-0 text-muted tag-material">Clima</p>
+                        <span><small>Todos</small></span>
+                        <p class="m-0 text-muted tag-material">Confort</p>
+                        <span><small>Máximo</small></span>
+                    </div>
+
+                    <div class="pricing m-1 d-flex justify-content-around">
+                        <p class="text-muted m-0"><small class="pe-2"><del>$87.900</del></small><strong class="text-success">$69.900</strong></p>
+                    </div>
+
+                    <div class="img-catalog">
+                        <img src="img/maillot7.jpg" alt="maillot7" class="img-fluid">
+                    </div>
+                    <div class="rating d-flex justify-content-center">
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                    </div>                                                        
+                </div>
+
+
+                <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
+                    <div class="title d-flex justify-content-between align-items-center m-1 my-2">
+                        <h5 class="d-inline-block text-secondary m-0">Windy day</h5>
+                        <i class="far fa-bookmark fa-2x text-secondary"></i>
+                    </div>
+                    <hr>
+                    <div class="about-product m-1 d-flex justify-content-around align-items-center">
+                        <p class="m-0 text-muted tag-material">Clima</p>
+                        <span><small>Todos</small></span>
+                        <p class="m-0 text-muted tag-material">Confort</p>
+                        <span><small>Ultra</small></span>
+                    </div>
+
+                    <div class="pricing m-1 d-flex justify-content-around">
+                        <p class="text-muted m-0"><small class="pe-2"><del>$87.900</del></small><strong class="text-success">$69.900</strong></p>
+                    </div>
+
+                    <div class="img-catalog">
+                        <img src="img/maillot8.jpg" alt="maillot8" class="img-fluid">
+                    </div>
+                    <div class="rating d-flex justify-content-center">
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                        <i class="fas fa-star m-1 text-warning"></i>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                    </div>                                                        
+                </div>
+
+
+                <div class="row d-flex justify-content-center my-3 d-none" id="buttonLess">
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-outline-danger m-1" id="productDetails">Ver menos
+                            <i class="fas fa-angle-double-up"></i>
+                        </button>
+                    </div>          
+                </div>
+
+            </div>
+        
       
+        
+
       <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
       <script src="js/main.js"></script>
         
