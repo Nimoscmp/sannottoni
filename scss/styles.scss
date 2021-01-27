@@ -140,6 +140,22 @@ __________CATALOG_________
 
 }
 
+/*========================
+__________FOOTER_________
+==========================*/
+
+footer{
+    i{
+        transition: all 0.3s ease;
+
+        &:hover{
+            color: $light !important;
+            transform: translateY(-0.3rem);
+        }
+    }
+}
+
+
 
 /*========================
 ______MEDIA QUERIES______
@@ -156,5 +172,11 @@ ______MEDIA QUERIES______
 
     #searchButton{
         width: 100% !important;
+    }
+
+    footer{
+        .made-by{
+            font-size: 0.75rem !important;
+        }
     }
 }

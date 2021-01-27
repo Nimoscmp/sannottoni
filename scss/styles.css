@@ -11403,6 +11403,20 @@ __________CATALOG_________
 }
 
 /*========================
+__________FOOTER_________
+==========================*/
+footer i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer i:hover {
+  color: #f8f9fa !important;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+/*========================
 ______MEDIA QUERIES______
 ==========================*/
 @media screen and (min-width: 400px) and (max-width: 575px) {
@@ -11414,6 +11428,9 @@ ______MEDIA QUERIES______
 @media screen and (max-width: 399px) {
   #searchButton {
     width: 100% !important;
+  }
+  footer .made-by {
+    font-size: 0.75rem !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
