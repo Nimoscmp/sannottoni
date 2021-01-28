@@ -3,6 +3,7 @@
 File to set behavior of buttons to see more products
 ===================*/ 
 
+(function () {
 
     var buttonMoreInfo = document.getElementById('buttonMore');
     var buttonLessInfo = document.getElementById('buttonLess');
@@ -30,3 +31,5 @@ File to set behavior of buttons to see more products
         buttonMoreInfo.classList.remove('d-none');
 
     });
+
+})();
