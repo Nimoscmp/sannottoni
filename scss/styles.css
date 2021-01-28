@@ -11321,6 +11321,11 @@ body {
 /*========================
 __________HEADER__________
 ==========================*/
+header {
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(53, 53, 53, 0.1);
+          box-shadow: 0px 2px 5px 1px rgba(53, 53, 53, 0.1);
+}
+
 header .img-desktop {
   width: 3.75rem;
 }
@@ -11336,6 +11341,15 @@ header img {
 
 header .fa-shopping-cart {
   cursor: pointer;
+  position: relative;
+}
+
+header .fa-shopping-cart span {
+  position: absolute;
+  top: -25%;
+  right: -25%;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
 }
 
 header .avatar-container {
@@ -11380,7 +11394,7 @@ header .mobile-menu .dropdown-menu #item-cart:hover {
 /*========================
 __________CATALOG_________
 ==========================*/
-.img-catalog::before {
+section .img-catalog::before {
   content: "";
   display: block;
   width: 5rem;
@@ -11389,28 +11403,28 @@ __________CATALOG_________
   margin: 1rem auto 1rem;
 }
 
-.tag-material {
+section .tag-material {
   font-size: 0.75rem !important;
 }
 
-.product-card {
+section .product-card {
   -webkit-box-shadow: 0px 2px 5px 1px rgba(53, 53, 53, 0.2);
           box-shadow: 0px 2px 5px 1px rgba(53, 53, 53, 0.2);
 }
 
-.product-card button {
+section .product-card button {
   width: 90%;
 }
 
 /*========================
 __________FOOTER_________
 ==========================*/
-footer i {
+footer a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-footer i:hover {
+footer a:hover {
   color: #f8f9fa !important;
   -webkit-transform: translateY(-0.3rem);
           transform: translateY(-0.3rem);
