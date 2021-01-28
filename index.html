@@ -41,7 +41,9 @@
                 <li class="nav-item"><a class="nav-link link-success px-4 py-2" href="#contact">Contacto</a></li>
                 <li class="nav-item">
                   <a class="nav-link">
-                    <i class="fas fa-shopping-cart fa-2x text-danger"></i>
+                    <i class="fas fa-shopping-cart fa-2x text-danger">
+                        <span class="badge rounded-pill bg-success" id="products-counter"></span>
+                    </i>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -66,7 +68,9 @@
               <ul class="dropdown-menu bg-light" aria-labelledby="dropdownButton">
                 <li><a class="dropdown-item text-primary" id="item-products" href="#products">Productos</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-warning" id="item-cart" href="#">Carrito</a></li>
+                <li><a class="dropdown-item text-warning d-flex align-items-center" id="item-cart" href="#">Carrito
+                    <span class="badge rounded-pill bg-success mx-2" id="products-counter-mobile"></span>
+                </a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#start">Inicio</a></li>
                 <li><a class="dropdown-item" href="#aboutus">Conócenos</a></li>
@@ -176,10 +180,10 @@
                     </div>
                     
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                        <button type="button" class="btn btn-outline-secondary m-1">Ver detalles</button>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                        <button type="button" class="btn btn-primary m-1 add-to-cart-button">Agregar al carrito</button>
                     </div>                                                        
                 </div>
 
@@ -213,10 +217,10 @@
                     </div>
                     
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                        <button type="button" class="btn btn-outline-secondary m-1">Ver detalles</button>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                        <button type="button" class="btn btn-primary m-1 add-to-cart-button">Agregar al carrito</button>
                     </div>
                 </div>
 
@@ -250,10 +254,10 @@
                     </div>
                     
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                        <button type="button" class="btn btn-outline-secondary m-1">Ver detalles</button>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                        <button type="button" class="btn btn-primary m-1 add-to-cart-button">Agregar al carrito</button>
                     </div>
                 </div>
 
@@ -269,7 +273,7 @@
 
                 <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
                     <div class="title d-flex justify-content-between align-items-center m-1 my-2">
-                        <h5 class="d-inline-block text-secondary m-0">Light day</h5>
+                        <h5 class="d-inline-block text-secondary m-0">Fresh moment</h5>
                         <i class="far fa-bookmark fa-2x text-secondary"></i>
                     </div>
                     <hr>
@@ -296,17 +300,17 @@
                     </div>
                     
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                        <button type="button" class="btn btn-outline-secondary m-1">Ver detalles</button>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                        <button type="button" class="btn btn-primary m-1 add-to-cart-button">Agregar al carrito</button>
                     </div>
                 </div>
 
 
                 <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
                     <div class="title d-flex justify-content-between align-items-center m-1 my-2">
-                        <h5 class="d-inline-block text-secondary m-0">Light day</h5>
+                        <h5 class="d-inline-block text-secondary m-0">Silver</h5>
                         <i class="far fa-bookmark fa-2x text-secondary"></i>
                     </div>
                     <hr>
@@ -333,17 +337,17 @@
                     </div>
                     
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                        <button type="button" class="btn btn-outline-secondary m-1">Ver detalles</button>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                        <button type="button" class="btn btn-primary m-1 add-to-cart-button">Agregar al carrito</button>
                     </div>
                 </div>
 
 
                 <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
                     <div class="title d-flex justify-content-between align-items-center m-1 my-2">
-                        <h5 class="d-inline-block text-secondary m-0">Light day</h5>
+                        <h5 class="d-inline-block text-secondary m-0">Slate</h5>
                         <i class="far fa-bookmark fa-2x text-secondary"></i>
                     </div>
                     <hr>
@@ -370,17 +374,17 @@
                     </div>
                     
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                        <button type="button" class="btn btn-outline-secondary m-1">Ver detalles</button>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                        <button type="button" class="btn btn-primary m-1 add-to-cart-button">Agregar al carrito</button>
                     </div>
                 </div>
 
 
                 <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
                     <div class="title d-flex justify-content-between align-items-center m-1 my-2">
-                        <h5 class="d-inline-block text-secondary m-0">Windy day</h5>
+                        <h5 class="d-inline-block text-secondary m-0">Turquoise</h5>
                         <i class="far fa-bookmark fa-2x text-secondary"></i>
                     </div>
                     <hr>
@@ -407,17 +411,17 @@
                     </div>
                     
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                        <button type="button" class="btn btn-outline-secondary m-1">Ver detalles</button>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                        <button type="button" class="btn btn-primary m-1 add-to-cart-button">Agregar al carrito</button>
                     </div>                                                        
                 </div>
 
 
                 <div class="col-11 col-sm-5 col-lg-3 p-1 m-2 border rounded product-card d-none">
                     <div class="title d-flex justify-content-between align-items-center m-1 my-2">
-                        <h5 class="d-inline-block text-secondary m-0">Windy day</h5>
+                        <h5 class="d-inline-block text-secondary m-0">Sky</h5>
                         <i class="far fa-bookmark fa-2x text-secondary"></i>
                     </div>
                     <hr>
@@ -444,10 +448,10 @@
                     </div>
                     
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-secondary m-1" id="productDetails">Ver detalles</button>
+                        <button type="button" class="btn btn-outline-secondary m-1">Ver detalles</button>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary m-1" id="addToCartButton">Agregar al carrito</button>
+                        <button type="button" class="btn btn-primary m-1 add-to-cart-button">Agregar al carrito</button>
                     </div>                                                        
                 </div>
 
@@ -487,7 +491,8 @@
     </footer>
 
     <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/moreproducts.js"></script>
+    <script src="js/addtocart.js"></script>
         
   </body>
   
